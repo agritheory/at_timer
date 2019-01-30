@@ -8,12 +8,20 @@
   <div>
     <h3><b>AgriTheory Time Tracker<b></h3>
   </div>
-  <section class="login-section">
+  <section id="login-section" class="login-section d-block">
     <form id="login-form">
       <input id="domain" class="form-control" type="text" placeholder="agritheory.com"/><br>
-      <input id="username" class="form-control" type="text" placeholder="username"/><br>
-      <input id="password" class="form-control" type="password" placeholder="password"/><br>
+      <input id="username" class="form-control" type="text" placeholder="Username"/><br>
+      <input id="password" class="form-control" type="password" placeholder="Password"/><br>
       <input id="login" class="btn btn-primary" type="submit" value="Login"/><br>
+    </form>
+  </section>
+  <section id="timer-section" class="timer-section d-none">
+    <form id="timer-form">
+      <input id="project" class="form-control" type="text" placeholder="Project"/><br>
+      <input id="task" class="form-control" type="text" placeholder="Task"/><br>
+      <input id="todo" class="form-control" type="text" placeholder="ToDo"/><br>
+      <input id="start-timer" class="btn btn-primary" type="submit" value="Start Timer"/><br>
     </form>
   </section>
   </div>
@@ -22,6 +30,11 @@
 
 <style>
 .login-section {
+  width: 100%;
+  text-align: center;
+}
+
+.timer-section {
   width: 100%;
   text-align: center;
 }
@@ -45,5 +58,5 @@ body {
   background-color: #2C2923;
 }
 </style>
-  <script type="text/javascript" src="/eel.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="/eel.js"></script>
+<script type="text/javascript" src="script.js"></script>
